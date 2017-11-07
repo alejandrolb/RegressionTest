@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="a7434e78-e5c6-4906-ace4-adaaf08b91b0"
+mode="Global"
+rxversion="7.2">
+	<name>
+		Recording1
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="RegressionTest_Project">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="20e7bb9b-fcf7-4e55-bc69-3cfbce9ae715"
+	name="RegressionTest_ProjectRepository"
+	relativepath="RegressionTest_ProjectRepository.rxrep"
+	rxversion="7.2">
+		<codegen
+		classname="RegressionTest_ProjectRepository"
+		namespace="RegressionTest_Project">
+		</codegen>
+		<rootfolder
+		id="709341ba-1eb8-4b33-993b-95ac57749535"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

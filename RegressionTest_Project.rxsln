@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# Ranorex Studio 7.2
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegressionTest_Project", "RegressionTest_Project\RegressionTest_Project.csproj", "{9FED2EAB-42B5-49FA-99E6-E8150BBE7BAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E6FFE98-9540-40FF-B0F5-F8364FCD76A3}"
+	ProjectSection(SolutionItems) = postProject
+		Ranorex = .\Ranorex.rxsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FED2EAB-42B5-49FA-99E6-E8150BBE7BAE}.Debug|x86.Build.0 = Debug|x86
+		{9FED2EAB-42B5-49FA-99E6-E8150BBE7BAE}.Debug|x86.ActiveCfg = Debug|x86
+		{9FED2EAB-42B5-49FA-99E6-E8150BBE7BAE}.Release|x86.Build.0 = Release|x86
+		{9FED2EAB-42B5-49FA-99E6-E8150BBE7BAE}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+EndGlobal

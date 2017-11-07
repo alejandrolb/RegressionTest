@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="RegressionTest_ProjectRepository"
+id="20e7bb9b-fcf7-4e55-bc69-3cfbce9ae715"
+rxversion="7.2">
+  <codegen
+  classname="RegressionTest_ProjectRepository"
+  namespace="RegressionTest_Project"/>
+  <rootfolder
+  name="Root"
+  id="709341ba-1eb8-4b33-993b-95ac57749535"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
