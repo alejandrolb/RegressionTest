@@ -27,6 +27,7 @@ namespace RegressionTest_Project
     public partial class RegressionTest_ProjectRepository : RepoGenBaseFolder
     {
         static RegressionTest_ProjectRepository instance = new RegressionTest_ProjectRepository();
+        RegressionTest_ProjectRepositoryFolders.ExplorerAppFolder _explorer;
 
         /// <summary>
         /// Gets the singleton class instance representing the RegressionTest_ProjectRepository element repository.
@@ -43,6 +44,7 @@ namespace RegressionTest_Project
         public RegressionTest_ProjectRepository() 
             : base("RegressionTest_ProjectRepository", "/", null, 0, false, "709341ba-1eb8-4b33-993b-95ac57749535", ".\\RepositoryImages\\RegressionTest_ProjectRepository709341ba.rximgres")
         {
+            _explorer = new RegressionTest_ProjectRepositoryFolders.ExplorerAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace RegressionTest_Project
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Explorer folder.
+        /// </summary>
+        [RepositoryFolder("a78050dd-77b7-4c4a-907f-b77f5501fa70")]
+        public virtual RegressionTest_ProjectRepositoryFolders.ExplorerAppFolder Explorer
+        {
+            get { return _explorer; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace RegressionTest_Project
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class RegressionTest_ProjectRepositoryFolders
     {
+        /// <summary>
+        /// The ExplorerAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("a78050dd-77b7-4c4a-907f-b77f5501fa70")]
+        public partial class ExplorerAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _list1Info;
+
+            /// <summary>
+            /// Creates a new Explorer  folder.
+            /// </summary>
+            public ExplorerAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Explorer", "/desktop[@processname='explorer']", parentFolder, 30000, null, true, "a78050dd-77b7-4c4a-907f-b77f5501fa70", "")
+            {
+                _list1Info = new RepoItemInfo(this, "List1", "?/?/list[@controlid='1']", 30000, null, "8117742b-a5cc-490c-9810-8056dfd82b29");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("a78050dd-77b7-4c4a-907f-b77f5501fa70")]
+            public virtual Ranorex.Desktop Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Desktop>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("a78050dd-77b7-4c4a-907f-b77f5501fa70")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The List1 item.
+            /// </summary>
+            [RepositoryItem("8117742b-a5cc-490c-9810-8056dfd82b29")]
+            public virtual Ranorex.List List1
+            {
+                get
+                {
+                    return _list1Info.CreateAdapter<Ranorex.List>(true);
+                }
+            }
+
+            /// <summary>
+            /// The List1 item info.
+            /// </summary>
+            [RepositoryItemInfo("8117742b-a5cc-490c-9810-8056dfd82b29")]
+            public virtual RepoItemInfo List1Info
+            {
+                get
+                {
+                    return _list1Info;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

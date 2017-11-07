@@ -79,6 +79,10 @@ namespace RegressionTest_Project
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Explorer.List1' at 1250;644.", repo.Explorer.List1Info, new RecordItemIndex(0));
+            repo.Explorer.List1.Click("1250;644");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
